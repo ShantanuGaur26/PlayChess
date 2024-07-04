@@ -65,17 +65,17 @@ router.get(
   }),
 );
 
-router.get(
-  '/github',
-  passport.authenticate('github', { scope: ['read:user', 'user:email'] }),
-);
+// router.get(
+//   '/github',
+//   passport.authenticate('github', { scope: ['read:user', 'user:email'] }),
+// );
 
-router.get(
-  '/github/callback',
-  passport.authenticate('github', {
-    successRedirect: CLIENT_URL,
-    failureRedirect: '/login/failed',
-  }),
-);
+// router.get(
+//   '/github/callback',
+//   passport.authenticate('github', {
+//     successRedirect: CLIENT_URL,
+//     failureRedirect: '/login/failed',
+//   }),
+// );
 
 export default router;

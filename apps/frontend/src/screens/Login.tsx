@@ -1,5 +1,4 @@
 import Google from '../assets/google.png';
-import Github from '../assets/github.png';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -11,10 +10,6 @@ const Login = () => {
 
   const google = () => {
     window.open(`${BACKEND_URL}/auth/google`, '_self');
-  };
-
-  const github = () => {
-    window.open(`${BACKEND_URL}/auth/github`, '_self');
   };
 
   return (
@@ -30,13 +25,6 @@ const Login = () => {
           >
             <img src={Google} alt="Sign in with Google" className="w-6 h-6 mr-2" />
             Sign in with Google
-          </div>
-          <div
-            className="flex items-center justify-center chess-board text-white px-4 py-2 rounded-md cursor-pointer hover:bg-gray-600 transition-colors duration-300"
-            onClick={github}
-          >
-            <img src={Github} alt="Sign in with Github" className="w-6 h-6 mr-2" />
-            Sign in with Github
           </div>
         </div>
         <div className="flex flex-col items-center md:ml-8">

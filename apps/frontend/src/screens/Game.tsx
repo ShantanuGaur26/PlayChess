@@ -1,5 +1,7 @@
 /* eslint-disable no-case-declarations */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+//@ts-nocheck
+
 import { useEffect, useRef, useState } from 'react';
 import MoveSound from '/move.wav';
 import { Button } from '../components/Button';

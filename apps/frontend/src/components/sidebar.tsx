@@ -43,7 +43,7 @@ export default function Sidebar({ className }: SidebarProps) {
         <div className="flex flex-col justify-start">
           {isOpen && (
             <span className="text-center text-white text-2xl font-bold tracking-tighter ">
-              100xchess
+              Play Chess
             </span>
           )}
 
